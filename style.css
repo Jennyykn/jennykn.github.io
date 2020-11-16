@@ -1,7 +1,28 @@
+.header {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    background-color: rgb(197, 241, 255);
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content {
+    background-color: rgb(253, 251, 245);
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 table, th, td {
     border: 1px solid black;
-    padding: 10px;
+    padding: 3px;
     text-align: center;
+    border-spacing: 3px;
 }
 
 table {
@@ -22,4 +43,8 @@ table {
 
 #math {
     background-color: rgb(255, 222, 115);
+}
+
+#workOut {
+    background-color: rgb(255, 195, 232);
 }

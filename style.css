@@ -1,20 +1,22 @@
 .header {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    font-family: papyrus;
+    font-size: 30px;
+    border-radius: 25px;
     text-align: center;
-    background-color: rgb(197, 241, 255);
-    max-width: 900px;
+    background-color: rgb(229, 238, 224);
     margin: auto;
     padding: 20px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .content {
-    background-color: rgb(253, 251, 245);
-    max-width: 900px;
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: rgb(229, 238, 224);
     margin: auto;
+    max-width: 1200px;
     padding: 20px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 
@@ -25,8 +27,12 @@ table, th, td {
     border-spacing: 3px;
 }
 
+#day {
+    width:20%;
+}
 table {
-    width: 50%;
+    width: 100%;
+    background-color: white;
 }
 
 #network {
@@ -47,4 +53,29 @@ table {
 
 #workOut {
     background-color: rgb(255, 195, 232);
+}
+
+img {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body, html {
+    background-color: rgb(229, 238, 224);
+    height: 100%;
+    margin: 0;
+    
+}
+.backgroundParallax {
+    background-image: url("nature2.jpg");
+    opacity: 0.6;
+    height: 50%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -1,24 +1,24 @@
 .header {
+    height: 18%;
     font-family: papyrus, sans-serif;
     font-size: 30px;
-    border-radius: 25px;
     text-align: center;
     background-color: rgb(229, 238, 224);
     margin: auto;
-    padding: 20px;
+    padding: 10px;
+}
 
+#navi {
+    display: inline;
 }
 
 .content {
-
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-color: rgb(229, 238, 224);
     margin: auto;
     max-width: 1200px;
     padding: 20px;
-
 }
-
 
 table, th, td {
     border: 1px solid black;
@@ -30,6 +30,7 @@ table, th, td {
 #day {
     width:20%;
 }
+
 table {
     width: 100%;
     background-color: white;
@@ -61,7 +62,7 @@ img {
     float: right;
     border-radius: 5px;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 50px;
+    margin-top: 80px;
     background-color: white;
     padding-top: 10px;
     padding-right: 10px;
@@ -74,8 +75,8 @@ body, html {
     background-color: rgb(229, 238, 224);
     height: 100%;
     margin: 0;
-    
 }
+
 .backgroundParallax {
     background-image: url("../img/nature2.jpg");
     opacity: 0.6;
@@ -84,6 +85,14 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallaxText {
+    font-family: papyrus, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 30%;
 }
 
 .backgroundParallax2 {
@@ -96,10 +105,6 @@ body, html {
     background-size: cover;
 }
 
-#navi {
-    display: inline;
-    
-}
 ul li a {
     color:black;
     background-color: rgb(229, 238, 224);
@@ -110,11 +115,15 @@ ul li a {
 
 ul li a:hover {
     background-color: rgb(173, 197, 159);
-
 }
 
 h2 {
     font-family: papyrus, sans-serif;
     font-size: 40px;
 }
+
+li {
+    margin: 8px;
+}
+
 

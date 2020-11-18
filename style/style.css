@@ -1,5 +1,5 @@
 .header {
-    font-family: papyrus;
+    font-family: papyrus, sans-serif;
     font-size: 30px;
     border-radius: 25px;
     text-align: center;
@@ -59,8 +59,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     float: right;
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
+    background-color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 60px;
+    transform: rotate(3deg)
 }
 
 body, html {
@@ -70,12 +77,44 @@ body, html {
     
 }
 .backgroundParallax {
-    background-image: url("nature2.jpg");
+    background-image: url("../img/nature2.jpg");
     opacity: 0.6;
     height: 50%;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.backgroundParallax2 {
+    background-image: url("../img/gun.jpg");
+    opacity: 0.6;
+    height: 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navi {
+    display: inline;
+    
+}
+ul li a {
+    color:black;
+    background-color: rgb(229, 238, 224);
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+ul li a:hover {
+    background-color: rgb(173, 197, 159);
+
+}
+
+h2 {
+    font-family: papyrus, sans-serif;
+    font-size: 40px;
+}
+

@@ -1,15 +1,43 @@
 .header {
-    height: 18%;
+    border-bottom: solid black ;
     font-family: papyrus, sans-serif;
     font-size: 30px;
     text-align: center;
     background-color: rgb(229, 238, 224);
+    padding: 6px;
     margin: auto;
-    padding: 10px;
 }
 
-#navi {
+.stickyNav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(229, 238, 224);
+    border-bottom: solid black;
+}
+
+#navBar {
+
+    padding-left: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid black;
+}
+#navBar a {
     display: inline;
+    font-family: papyrus, sans-serif;
+    font-size: 30px;
+    color:black;
+    background-color: rgb(229, 238, 224);
+    text-decoration: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+}
+
+#navBar a:hover {
+    background-color: rgb(173, 197, 159);
 }
 
 .content {
@@ -18,6 +46,11 @@
     margin: auto;
     max-width: 1200px;
     padding: 20px;
+}
+
+#home, #personalInfo, #favBooks, #haiku, #interests, #schedule {
+    padding-top: 70px;
+    margin-top: -70px;
 }
 
 table, th, td {
@@ -103,18 +136,6 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-ul li a {
-    color:black;
-    background-color: rgb(229, 238, 224);
-    text-decoration: none;
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
-ul li a:hover {
-    background-color: rgb(173, 197, 159);
 }
 
 h2 {

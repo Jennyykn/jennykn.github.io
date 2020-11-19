@@ -23,15 +23,16 @@ function navFunc() {
     }
 }
 
+
 window.addEventListener("scroll", function () {
     let navBar = document.getElementById("navBar");
-    
     let stickyNavi = navBar.offsetTop;
+    let infoTop = document.getElementById("personalInfo").offsetTop;
 
     if (window.pageYOffset >= stickyNavi) {
         navBar.classList.add("stickyNav");
     } 
-    if (window.pageYOffset <= stickyNavi) {
+    if (window.pageYOffset <= infoTop) {
         navBar.classList.remove("stickyNav");
     }
 });

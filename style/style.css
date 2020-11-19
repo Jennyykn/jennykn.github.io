@@ -1,20 +1,25 @@
 .header {
-    border-bottom: solid black ;
+    position: relative;
     font-family: papyrus, sans-serif;
-    font-size: 30px;
+    font-size: 60px;
+    color: black;
     text-align: center;
-    background-color: rgb(229, 238, 224);
-    padding: 6px;
-    margin: auto;
+    padding: 0px;
+    margin-top: -800px;
+    padding-bottom: 100px;
+    top: 10%;
 }
 
 .stickyNav {
     z-index: 1;
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
-    background-color: rgb(229, 238, 224);
+    background-color: rgb(236, 234, 222);
     border-bottom: solid black;
+}
+.stickyNav + .content{
+    padding-top: 60px;
 }
 
 #navBar {
@@ -28,7 +33,7 @@
     font-family: papyrus, sans-serif;
     font-size: 30px;
     color:black;
-    background-color: rgb(229, 238, 224);
+    background-color: rgb(236, 234, 222);
     text-decoration: none;
     padding-left: 35px;
     padding-right: 35px;
@@ -36,16 +41,26 @@
 }
 
 #navBar a:hover {
-    background-color: rgb(173, 197, 159);
+    background-color: rgb(184, 181, 169);
+    transition: 0.3s;
 }
 
-.content {
+.content-1, .content-2 {
+    
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background-color: rgb(229, 238, 224);
+    background-color: rgb(236, 234, 222);
     margin: auto;
-    max-width: 1200px;
     padding: 20px;
+    margin-bottom: 50px;
 }
+.content-1 {
+    margin-left: 400px;
+}
+
+.content-2 {
+    margin-left: 900px;
+}
+
 
 table, th, td {
     border: 1px solid black;
@@ -83,54 +98,72 @@ table {
     background-color: rgb(255, 195, 232);
 }
 
-img {
-    display: flex;
-    flex-wrap: wrap;
-    float: right;
+#topPic {
+    display: block;
+    height: 375px;
+    width: 375px;
     border-radius: 5px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 80px;
-    background-color: white;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    margin-top: 0px;
+    margin-bottom: 120px ;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(248, 248, 240);
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 60px;
-    transform: rotate(3deg)
+    transform: rotate(3deg);
+}
+#topPic:hover {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 95px;
+    opacity: 0.9;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
+#family {
+    display: block;
+    margin-top: 0px;
+    margin-right: 450px;
+    float: right;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    border: solid black;
+}
 body, html {
-    background-color: rgb(229, 238, 224);
+    background-color: rgb(236, 234, 222);
     height: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0px;
 }
 
-.backgroundParallax {
-    background-image: url("../img/nature2.jpg");
-    opacity: 0.6;
-    height: 50%;
+.par-1, .par-2, .par-3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.parallaxText {
-    font-family: papyrus, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    position: relative;
-    top: 30%;
+.par-1 {
+    background-image: url("../img/utahorem.jpg");
+    height: 80%;
+    opacity: 0.7;
 }
 
-.backgroundParallax2 {
+.par-2 {
     background-image: url("../img/gun.jpg");
-    opacity: 0.6;
     height: 50%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.par-3 {
+    border-top: solid black;
+    border-bottom: solid black;
+    background-image: url(../img/myDog.jpeg);
+    height: 30%;
+    opacity: 0.4;
 }
 
 h2 {

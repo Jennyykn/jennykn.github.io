@@ -16,6 +16,16 @@ body, html {
     margin: 0px;
 }
 
+footer {
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(148, 143, 117);
+    border-bottom: solid black;
+}
+
 /* Styling by tags */
 h2 {
     font-family: papyrus, sans-serif;
@@ -36,7 +46,7 @@ li a:hover {
     color: rgb(70, 62, 51);
 }
 #haiku p i {
-    margin-left: 40px;
+    margin-left: 50px;
 }
 /* End of: Styling by tags */
 
@@ -56,6 +66,18 @@ li a:hover {
     width: 25%;
     padding-left: 200px;
     padding-right: 50px;
+}
+#interests {
+    margin: auto;
+    width: 50%;
+    border: solid black;
+    padding: 30px;
+    background-color: rgb(221, 218, 202);
+}
+
+#schedule {
+    margin: auto;
+    width: 70%;
 }
 
 /*End of: Styling by id */
@@ -100,7 +122,7 @@ li a:hover {
 
 
 /* Content styling by class */
-.content-1, .content-2, .content-3{
+.content-1, .content-2, .content-3, .content-4, .contentTable{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     margin: auto;
     padding-top: 50px;
@@ -123,6 +145,19 @@ li a:hover {
 .content-3 {
     background-color: rgb(221, 218, 202);
     padding-bottom: 50px;
+}
+.content-4 {
+    background-color: rgb(102, 98, 78);
+    padding-bottom: 50px;
+    border-top: solid black;
+    border-bottom: solid black;
+}
+
+.contentTable {
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: rgb(221, 218, 202);
+    border-top: solid black;
 }
 /*End of: Content styling by class */
 
@@ -219,7 +254,7 @@ table {
 
 
 /* Parallax images */
-.par-1, .par-2, .par-3, .par-4 {
+.par-1, .par-2, .par-3, .par-4, .par-5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -234,24 +269,32 @@ table {
 }
 
 .par-2 {
-    background-image: url("../img/gun.jpg");
-    height: 50%;
-    opacity: 0.6;
-
-}
-
-.par-3 {
     border-top: solid black;
     background-image: url("../img/myDog.jpeg");
     height: 30%;
     opacity: 0.3;
 }
 
-.par-4 {
+.par-3 {
     background-image: url("../img/fishing.jpg");
     height: 40%;
     opacity: 0.6;
 }
+
+.par-4 {
+    background-image: url("../img/nature.jpg");
+    height: 40%;
+    opacity: 0.6;
+
+}
+
+.par-5 {
+    background-image: url("../img/sunset.JPG");
+    height: 30%;
+    opacity: 0.5;
+
+}
+
 /* End of: Parallax images */
 
 

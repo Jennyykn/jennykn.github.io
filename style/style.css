@@ -10,6 +10,58 @@
     top: 10%;
 }
 
+body, html {
+    background-color: rgb(236, 234, 222);
+    height: 100%;
+    margin: 0px;
+}
+
+/* Styling by tags */
+h2 {
+    font-family: papyrus, sans-serif;
+    font-size: 40px;
+}
+
+li {
+    margin: 8px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: rgb(70, 62, 51);
+}
+#haiku p i {
+    margin-left: 40px;
+}
+/* End of: Styling by tags */
+
+
+/* Styling by id */
+#fill {
+    position: relative;
+    background-color: rgb(63, 57, 43);
+    padding: 70px;
+    border-bottom: solid black;
+    border-top: solid black;
+}
+
+#haiku {
+    border:solid black;
+    margin: auto;
+    width: 25%;
+    padding-left: 200px;
+    padding-right: 50px;
+}
+
+/*End of: Styling by id */
+
+
+/* Navigation Bar Styling */
 .stickyNav {
     z-index: 1;
     position: fixed;
@@ -44,24 +96,38 @@
     background-color: rgb(184, 181, 169);
     transition: 0.3s;
 }
+/*End of: Navigation Bar Styling */
 
-.content-1, .content-2 {
-    
+
+/* Content styling by class */
+.content-1, .content-2, .content-3{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background-color: rgb(236, 234, 222);
     margin: auto;
-    padding: 20px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+
 }
 .content-1 {
-    margin-left: 400px;
+    padding-bottom: 50px;
+    padding-left: 400px;
+    background-color: rgb(221, 218, 202);
 }
 
 .content-2 {
-    margin-left: 900px;
+    border-top: solid rgba(0, 0, 0, 0.856);
+    border-bottom: solid rgba(0, 0, 0, 0.835);
+    padding-left: 950px;
+    padding-bottom: 70px;
+    background-color: rgb(175, 170, 142);
 }
 
+.content-3 {
+    background-color: rgb(221, 218, 202);
+    padding-bottom: 50px;
+}
+/*End of: Content styling by class */
 
+
+/* Table Styling */
 table, th, td {
     border: 1px solid black;
     padding: 3px;
@@ -69,13 +135,13 @@ table, th, td {
     border-spacing: 3px;
 }
 
-#day {
-    width:20%;
-}
-
 table {
     width: 100%;
     background-color: white;
+}
+
+#day {
+    width:20%;
 }
 
 #network {
@@ -97,7 +163,10 @@ table {
 #workOut {
     background-color: rgb(255, 195, 232);
 }
+/* End of: Table Styling */
 
+
+/* Pictures Styling */
 #topPic {
     display: block;
     height: 375px;
@@ -108,13 +177,14 @@ table {
     margin-bottom: 120px ;
     margin-left: auto;
     margin-right: auto;
-    background-color:rgb(248, 248, 240);
+    background-color:rgb(241, 241, 229);
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 60px;
     transform: rotate(3deg);
 }
+
 #topPic:hover {
     height: 400px;
     width: 400px;
@@ -126,21 +196,30 @@ table {
 
 #family {
     display: block;
-    margin-top: 0px;
-    margin-right: 450px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 500px;
     float: right;
-    width: 15%;
-    height: 15%;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     border: solid black;
 }
-body, html {
-    background-color: rgb(236, 234, 222);
-    height: 100%;
-    margin: 0px;
-}
 
-.par-1, .par-2, .par-3 {
+#bookPic {
+    display: block;
+    float: left;
+    margin-left: -350px;
+    margin-top: auto;
+    height: 300px;
+    width: 300px;
+    opacity: 0.7;
+}
+/*End of: Pictures Styling */
+
+
+/* Parallax images */
+.par-1, .par-2, .par-3, .par-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,28 +230,81 @@ body, html {
     background-image: url("../img/utahorem.jpg");
     height: 80%;
     opacity: 0.7;
+    border-bottom: solid black;
 }
 
 .par-2 {
     background-image: url("../img/gun.jpg");
     height: 50%;
+    opacity: 0.6;
+
 }
 
 .par-3 {
     border-top: solid black;
-    border-bottom: solid black;
-    background-image: url(../img/myDog.jpeg);
+    background-image: url("../img/myDog.jpeg");
     height: 30%;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
-h2 {
-    font-family: papyrus, sans-serif;
-    font-size: 40px;
+.par-4 {
+    background-image: url("../img/fishing.jpg");
+    height: 40%;
+    opacity: 0.6;
+}
+/* End of: Parallax images */
+
+
+/* Modal */
+
+/* Keyframes */
+@keyframes fade {
+    0% {background-color: none}
+    100% {background-color: rgba(0, 0, 0, 0.9)}
 }
 
-li {
-    margin: 8px;
+@keyframes scale{
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+/* End of: Keyframes */
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 200px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
+.closeModal {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-size: 60px;
+;
+}
+.closeModal:hover {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(129, 23, 23);
+
+}
+
+.modalCont {
+    margin: auto;
+    display: block;
+    animation-name: scale;
+    animation-duration: 1s;
+}
+/*End of: Modal */
 

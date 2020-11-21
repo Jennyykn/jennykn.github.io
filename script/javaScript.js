@@ -46,7 +46,7 @@ window.onclick = function(x) {
 window.addEventListener("scroll", function () {
     let navBar = document.getElementById("navBar");
     let stickyNavi = navBar.offsetTop;
-    let infoTop = document.getElementById("personalInfo").offsetTop;
+    let infoTop = document.getElementById("navFix").offsetTop;
 
     if (window.pageYOffset >= stickyNavi) {
         navBar.classList.add("stickyNav");

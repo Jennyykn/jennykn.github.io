@@ -2,10 +2,11 @@
 
 • Portrait in modal
 • Browser tab icon ("favicon")
-• Sticky Navigation bar
+• Navigation bar (sticky when scrolling)
 • Sticky footer
 • Background parallax effect 
 • Indented poem
 • Mouse-over hyperlinks
 • Header fonts
-• Styled schedule
+• Styled weekly schedule
+• Striped table rows

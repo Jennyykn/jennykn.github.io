@@ -8,3 +8,4 @@
 • Indented poem
 • Mouse-over hyperlinks
 • Header fonts
+• Styled schedule

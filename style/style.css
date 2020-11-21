@@ -194,11 +194,16 @@ table {
     border: solid rgb(175, 164, 146);
 }
 
-tr:nth-child(even) {
-    background-color: rgb(236, 230, 222);
+th {
+    background-color: rgb(160, 146, 128);
 }
+
+tr:nth-child(even) {
+    background-color: rgb(243, 238, 231);
+}
+
 tr:nth-child(odd) {
-    background-color: rgb(246, 245, 238);
+    background-color: rgb(231, 222, 211);
 }
 
 table {

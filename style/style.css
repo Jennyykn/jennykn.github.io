@@ -68,12 +68,14 @@ li a:hover {
 }
 
 #personalInfo {
+    padding: 40px;
     margin: auto;
     width: 50%;
     padding-left: 10%;
 }
 
 #favBooks {
+    padding: 40px;
     margin: auto;
     width: 60%;
     white-space: nowrap;
@@ -83,14 +85,14 @@ li a:hover {
     border:solid black;
     margin: auto;
     width: 310px;
-    padding: 30px;
+    padding: 40px;
     background-color: rgb(179, 161, 144);
 }
 #interests {
     margin: auto;
     width: 50%;
     border: solid black;
-    padding: 30px;
+    padding: 40px;
     background-color: rgb(221, 218, 202);
 }
 
@@ -280,8 +282,8 @@ table {
     float: left;
     margin: auto;
     padding-right: 100px;
-    height: 220px;
-    width: 220px;
+    height: 250px;
+    width: 250px;
     opacity: 0.7;
 }
 /*End of: Pictures Styling */
